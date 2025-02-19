@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 15px 5%;
-    background-color: #030B17;
+    background-color: #091830;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 /* ------navbar-left--------- */
@@ -72,7 +72,7 @@
     z-index: -1;
 }
 .navbar-right p:hover {
-    color: #030B17;
+    color: #091830;
     background-color: transparent;
 }  
 .navbar-right p:hover::before {
@@ -81,7 +81,7 @@
 /* ------active-tab------ */
 .active-tab {
     background-color: white;
-    color: #030B17 !important;
+    color: #091830 !important;
     border-radius: 5px;
     padding: 8px 12px;
     transition: background-color 0.3s ease-in-out;
@@ -90,7 +90,7 @@
     display: none !important;
 }
 .active-tab:hover {
-    color: #030B17 !important;
+    color: #091830 !important;
     background-color: white !important;
 }
 

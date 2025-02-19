@@ -11,7 +11,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       <div className="logo" onClick={(e) => e.stopPropagation()}> {/* Prevent closing on logo click */}
         <img src={logo} alt="" />
         <div className="logo-name">
-          <p>SHRADHA</p>
+          <p>SHARDA</p>
           <p>CHEMICALS</p>
         </div>
       </div>

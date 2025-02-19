@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="navbar-left">
         <a href="#"><img src={logo} alt="logo" /></a>
         <div className="logo-name">
-          <p>SHRADHA</p>
+          <p>SHARDA</p>
           <p>CHEMICALS</p>
         </div>
       </div>
