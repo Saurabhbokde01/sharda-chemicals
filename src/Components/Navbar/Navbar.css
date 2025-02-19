@@ -116,4 +116,11 @@
     .menu-icon {
         display: block;
     }
+    .navbar-left img{
+        height: 52px;
+    }
+    .logo-name p:first-child,
+    .logo-name p:last-child{
+    font-size: 22px;
+    }
 }
