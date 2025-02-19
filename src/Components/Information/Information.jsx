@@ -7,9 +7,9 @@ const Information = () => {
     <div className="info">
       <div className="info-container1">
         <div className="info-box">
-          <h2>Our Vision</h2>
+          <h2>Our Mission</h2>
           <p>
-            Aaradhya Chemicals strives to be a trusted partner for the construction industry, known for its innovative chemical solutions that enhance concrete performance, sustainability, and longevity. Our vision is to become a global leader in the field of construction chemicals, driving the future of infrastructure development with our advanced products.
+          We are committed to revolutionizing the construction chemical industry in India and beyond. By delivering high-quality, cost-effective solutions, we aim to build a stronger, more sustainable future. Together, let's create the foundation for tomorrow's innovations.
           </p>
         </div>
         <div className="info-box-img">
@@ -23,9 +23,9 @@ const Information = () => {
           <img src={info_img_2} alt="Commitment to Quality" />
         </div>
         <div className="info-box">
-          <h2>Our Commitment to Quality</h2>
+          <h2>Our Vision</h2>
           <p>
-            At Aaradhya Chemicals, quality is at the core of everything we do. We adhere to stringent quality control processes and use the latest technological advancements to develop our products. This ensures that each product we deliver performs optimally under various conditions, helping our clients meet the highest construction standards.
+          Our vision is to redefine excellence in construction by offering superior chemical solutions. Through unwavering dedication to quality and global standards, we ensure superior quality and reliability in every product we offer.
           </p>
         </div>
       </div>
