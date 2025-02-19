@@ -47,10 +47,9 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(10px); /* Slight glass effect */
+    backdrop-filter: blur(10px);
     max-width: 90%;
     position: relative;
-    text-align: justify;
     overflow: hidden;
     min-height: 140px;
 }
@@ -58,12 +57,13 @@
     display: none;
     font-size: 18px;
     line-height: 1.6;
+    text-align: justify;
     color: white;
     transition: opacity 0.5s ease-in-out;
 }
 .desc p h2{
-    line-height: 1.6;
     font-weight: 500;
+    line-height: 1.6;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -129,11 +129,11 @@
 
     .home-container {
         max-width: 90%;
-        text-align: center;
+        /* text-align: center; */
     }
 
     .name p {
-        font-size: 40px;
+        font-size: 45px;
     }
 
     .desc {
@@ -164,10 +164,21 @@
         font-size: 13px;
         padding: 15px;
     }
+    .desc p h2{
+        font-size: 25px;
+    }
 
     .pre-btn, .next-btn {
         padding: 5px 10px;
         font-size: 14px;
     }
 
+}
+@media (max-width: 377px){
+    .desc p h2{
+        font-size: 20px;
+    }
+    .desc p{
+        font-size: 15px;
+    }
 }
