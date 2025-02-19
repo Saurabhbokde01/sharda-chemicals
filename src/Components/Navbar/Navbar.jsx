@@ -1,6 +1,6 @@
 import { useState } from "react";
 import logo from "../../assets/logo2-bg.png";
-import Sidebar from "../Sidebar/Sidebar"; // Import Sidebar component
+import Sidebar from "../Sidebar/Sidebar";
 import "./Navbar.css";
 
 const Navbar = () => {
