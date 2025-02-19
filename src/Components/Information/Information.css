@@ -4,7 +4,7 @@
     padding: 60px 5%;
     display: flex;
     flex-direction: column;
-    gap: 0px; /* Removed gap to make them touch */
+    gap: 0px;
     background: #f8f9fa;
 }
 
@@ -12,13 +12,12 @@
 .info-container1,
 .info-container2 {
     display: flex;
-    align-items: stretch; /* Makes sure both items have equal height */
+    align-items: stretch;
     justify-content: center;
-    gap: 0px; /* Removed gap to make sure they touch */
+    gap: 0px;
     width: 100%;
+    height: 500px;
 }
-
-/* Text Box Styling */
 .info-box {
     flex: 1;
     background: white;
@@ -26,24 +25,25 @@
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0px; /* Removed border radius so they merge properly */
+    border-radius: 0px;
     text-align: left;
     display: flex;
-    align-items: center; /* Center text vertically */
+    align-items: center;
     max-width: 50%;
-    min-height: 100%; /* Ensure same height as image */
+    min-height: 100px;
 }
 
 /* Headings and Paragraph */
 .info-box h2 {
     font-size: 28px;
-    color: #1a237e;
+    color: #ffd200;
     margin-bottom: 15px;
 }
 
 .info-box p {
     font-size: 18px;
     color: #333;
+    text-align: justify;
     line-height: 1.6;
 }
 

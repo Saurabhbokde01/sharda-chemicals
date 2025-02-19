@@ -5,7 +5,6 @@ import "./Information.css";
 const Information = () => {
   return (
     <div className="info">
-      {/* Mission Section (Text First, Image Second) */}
       <div className="info-container1">
         <div className="info-box">
           <h2>Our Vision</h2>
