@@ -1,0 +1,93 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #030B17;
+    color: white;
+    transition: left 0.3s ease-in-out;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+/* --------logo------ */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    margin-top: -50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Logo Image */
+.logo img {
+    height: 50px;  /* Adjust size as needed */
+    width: auto;
+}
+
+/* Logo Name Styling */
+.logo-name {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* First Line - Golden Text */
+.logo-name p:first-child {
+    color: #D4AF37;
+    margin: 0;
+}
+
+/* Second Line - White Text */
+.logo-name p:last-child {
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Show sidebar when open */
+.sidebar.open {
+    left: 0;
+}
+
+/* Sidebar menu items */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar ul li {
+    width: 85%;
+    margin: 5px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    padding: 8px 10px;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 6px; /* Smaller radius */
+    transition: all 0.2s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly brighter */
+    transform: scale(1.05);
+}
+
+/* Hide menu on large screens */
+@media screen and (min-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+}
