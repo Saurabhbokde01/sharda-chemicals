@@ -1,17 +1,14 @@
 .home {
     width: 100%;
-    min-height: 100vh; /* Ensures it never shrinks below viewport height */
-    padding-top: 40px; /* Adjust according to navbar height */
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                url("../../assets/home5.png") no-repeat center center/cover;
+    min-height: 100vh;
+    padding-top: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url("../../assets/home5.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
     padding-left: 10%;
     position: relative;
     z-index: 1;
 }
-
-/* Dark Overlay */
 .home::before {
     content: "";
     position: absolute;
@@ -19,106 +16,168 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Darkens the background */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-
-/* Background Image */
 .home {
     background: url("../../assets/home6.png") no-repeat center center/cover;
     background-size: cover;
     background-position: center;
 }
-
-/* Home Container */
 .home-container {
     text-align: left;
     max-width: 60%;
     position: relative;
-    z-index: 2; /* Ensures content is above the overlay */
+    z-index: 2;
 }
-
-/* Name Section */
 .name {
     display: flex;
     flex-direction: column;
     font-family: 'Georgia', serif;
     line-height: 1.1;
-    margin-bottom: 50px; /* Adjust this value for more/less space */
+    margin-bottom: 50px;
 }
-
 .name p {
-    font-size: 60px; /* Made Bigger */
+    font-size: 60px;
     font-weight: bold;
     margin: 0;
 }
 
 .name p:first-child {
     color: white;
-    text-shadow: 0 0 5px #FFD700, 0  0 10px #FFD700, 0 0 15px #FFD700;
 }
 
 .name p:last-child {
     color: white;
-    text-shadow: 0 0 5px cyan, 0  0 10px cyan, 0 0 15px cyan;
 }
 
-/* Description */
 .desc {
-    color: white; /* Dark Gray for better readability */
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.8; /* More spacing between lines */
-    text-align: justify; /* Aligns text evenly */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Slight glass effect */
     max-width: 90%;
-    letter-spacing: 0.5px;
+    position: relative;
+    text-align: justify;
+    overflow: hidden;
+    min-height: 140px;
+}
+.desc p {
+    display: none;
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    transition: opacity 0.5s ease-in-out;
 }
 
-/* Product Button */
-.product-btn {
-    margin-top: 30px;
+.desc p.active {
+    display: block;
+    opacity: 1;
 }
 
-.product-btn button {
-    background-color: transparent;
-     /* Golden Yellow */
-    color: white; /* Dark text for contrast */
+.desc-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.pre-btn, .next-btn {
+    background: white;
+    color: black;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    padding: 12px 24px;
-    border: 2px solid white; /* Elegant gold border */
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out; /* Smooth transition */
-    box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
-/* Hover Effect */
-.product-btn button:hover {
-    background-color: white; /* Keeps white background */
-    color: rgb(148, 137, 137); /* Elegant Gold Text */
-    transform: scale(1.08); /* Slightly enlarges */
-    box-shadow: 0 0 5px cyan, 0  0 10px cyan, 0 0 15px cyan;
+.pre-btn:hover, .next-btn:hover {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 
-
-@media (max-width: 800px) {
+/* -------------------------------- */
+/* RESPONSIVE DESIGN */
+/* -------------------------------- */
+@media (max-width: 1024px) {
     .home {
-        padding-left: 5%; /* Less padding on small screens */
-        padding-top: 100px;
-        background-position: right center; /* More space for navbar */
+        padding-left: 5%;
+        background-position: 45% center; /* Move BG slightly left */
     }
 
     .home-container {
-        max-width: 80%; /* Wider container for small screens */
+        max-width: 80%;
     }
 
     .name p {
-        font-size: 50px; /* Slightly smaller text */
+        font-size: 50px;
     }
 
     .desc {
         font-size: 16px;
     }
+}
+
+/* Screens Below 768px */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-top: 100px;
+        background-position: 40% center; /* Move BG slightly more left */
+    }
+
+    .home-container {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .name p {
+        font-size: 40px;
+    }
+
+    .desc {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .desc-btn {
+        gap: 5px;
+    }
+
+    .pre-btn, .next-btn {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+}
+
+/* Screens Below 740px - Move Image More Left */
+@media (max-width: 940px) {
+    .home {
+        background-position: 65% center; /* Adjust further for small screens */
+    }
+}
+
+/* Small Screens Below 480px */
+@media (max-width: 480px) {
+    .name p {
+        font-size: 30px;
+    }
+
+    .desc {
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    .pre-btn, .next-btn {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
 }
