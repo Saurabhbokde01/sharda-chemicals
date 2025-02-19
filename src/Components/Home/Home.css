@@ -70,6 +70,12 @@
     color: white;
     transition: opacity 0.5s ease-in-out;
 }
+.desc p h4{
+    color: gold;
+    font-size: 22px;
+    line-height: 1.6;
+    transition: opacity 0.5s ease-in-out;
+}
 
 .desc p.active {
     display: block;
@@ -107,7 +113,7 @@
 @media (max-width: 1024px) {
     .home {
         padding-left: 5%;
-        background-position: 45% center; /* Move BG slightly left */
+        background-position: 45% center;
     }
 
     .home-container {
@@ -122,15 +128,13 @@
         font-size: 16px;
     }
 }
-
-/* Screens Below 768px */
 @media (max-width: 768px) {
     .home {
         flex-direction: column;
         align-items: center;
         padding-left: 0;
         padding-top: 100px;
-        background-position: 40% center; /* Move BG slightly more left */
+        background-position: 40% center;
     }
 
     .home-container {
@@ -156,15 +160,11 @@
         font-size: 16px;
     }
 }
-
-/* Screens Below 740px - Move Image More Left */
 @media (max-width: 940px) {
     .home {
-        background-position: 65% center; /* Adjust further for small screens */
+        background-position: 65% center;
     }
 }
-
-/* Small Screens Below 480px */
 @media (max-width: 480px) {
     .name p {
         font-size: 30px;

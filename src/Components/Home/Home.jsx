@@ -64,9 +64,11 @@ const Home = () => {
         </div>
         <div className="desc">
           <p className={activeIndex === 0 ? "active" : ""}>
+            <h4>About Sharda Chemicals :</h4>
             Sharda Chemicals is a certified company that specializes in the manufacturing, supply, and distribution of various Pre and Post construction chemicals. To keep up with the flawlessness of the assortment, we procure supreme quality constituents from our dependable and trustworthy vendors. It is because of the quality and flawlessness offered that our chemicals are widely applauded in the construction industries.
           </p>
           <p className={activeIndex === 1 ? "active" : ""}>
+            <h4>What We Can Do ?</h4>
             Sharda Chemicals is the leading manufacturer and supplier of superior construction chemicals. Sharda Chemicals manufactures a wide range of products which are supplied to some of the biggest construction companies and industries. These construction chemicals are widely used in the construction of industrial, commercial, and infrastructural projects.
           </p>
           <div className="desc-btn">
