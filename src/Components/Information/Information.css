@@ -6,7 +6,7 @@
     flex-direction: column;
     gap: 0px;
     background: #f8f9fa;
-    margin-top: 50px; /* Space between Home.jsx and Information.jsx */
+    /* margin-top: 50px; */
 }
 
 .info h2 {
@@ -18,7 +18,7 @@
 }
 
 .info-container1 {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 /* Shared container styling */
@@ -115,7 +115,7 @@
 /* Responsive Design */
 @media (max-width: 825px) {
     .info {
-        margin-top: 80px; /* Increase margin to separate sections */
+        /* margin-top: 80px; */
         padding: 40px 3%;
     }
 

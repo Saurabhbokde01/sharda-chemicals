@@ -36,7 +36,7 @@ const Information = () => {
 
   return (
     <div className={`info ${animate ? "animate" : ""}`}>
-      <h2>Empowering Construction with High-Quality Chemical Solutions</h2>
+      <h2>Why Choose Sharda Chemicals ?</h2>
       <div className="info-container1">
         <div className={`info-box ${animate ? "slide-up" : ""}`}>
           <h2>Our Mission</h2>

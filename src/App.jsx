@@ -3,6 +3,9 @@ import Home from './Components/Home/Home'
 import Footer from './Components/Footer/Footer'
 import "./App.css"
 import Information from './Components/Information/Information'
+import Projects from './Components/Projects/Projects'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 const App = () => {
   return (
@@ -10,6 +13,7 @@ const App = () => {
       <Navbar/>
       <Home/>
       <Information/>
+      <Projects/>
       <Footer/>
     </div>
   )
