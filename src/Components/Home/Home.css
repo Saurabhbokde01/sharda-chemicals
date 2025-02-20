@@ -58,6 +58,7 @@
     position: relative;
     overflow: hidden;
     min-height: 140px;
+    margin-bottom: 10px;
 }
 .desc p {
     display: none;
@@ -69,7 +70,7 @@
 }
 .desc p h2{
     font-weight: 500;
-    color: #ffd200;
+    color: #FFD700;
     line-height: 1.6;
     transition: opacity 0.5s ease-in-out;
 }
@@ -117,7 +118,8 @@
         max-width: 80%;
     }
 
-    .name p {
+    .name p:first-child,
+    .name p:last-child {
         font-size: 50px;
     }
 
@@ -139,7 +141,8 @@
         /* text-align: center; */
     }
 
-    .name p {
+    .name p:first-child,
+    .name p:last-child {
         font-size: 45px;
     }
 
@@ -163,8 +166,9 @@
     }
 }
 @media (max-width: 480px) {
-    .name p {
-        font-size: 30px;
+    .name p:first-child,
+    .name p:last-child {
+        font-size: 40px;
     }
 
     .desc {

@@ -6,6 +6,7 @@
     flex-direction: column;
     gap: 0px;
     background: #f8f9fa;
+    margin-top: 50px; /* Space between Home.jsx and Information.jsx */
 }
 
 /* Shared container styling */
@@ -14,29 +15,38 @@
     display: flex;
     align-items: stretch;
     justify-content: center;
-    gap: 0px;
     width: 100%;
-    height: 430px;
+    min-height: 500px;
+    position: relative;
 }
-.info-box {
+
+/* Info Box and Image Box - Equal Size */
+.info-box,
+.info-box-img {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    max-width: 50%;
+}
+
+/* Info Box Styling */
+.info-box {
     background: white;
     padding: 30px;
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0px;
     text-align: left;
-    display: flex;
-    align-items: center;
-    max-width: 50%;
-    min-height: 100px;
+    z-index: 2;
+    position: relative;
 }
 
 /* Headings and Paragraph */
 .info-box h2 {
     font-size: 28px;
-    color: #ffd200;
+    color: #FFD700;
     margin-bottom: 15px;
 }
 
@@ -49,47 +59,31 @@
 
 /* Image Box */
 .info-box-img {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-    min-height: 50%; /* Ensure same height as text box */
+    overflow: hidden;
+    position: relative;
 }
 
 .info-box-img img {
     width: 100%;
-    height: 100%; /* Make image stretch fully */
-    object-fit: cover; /* Crop and fit image properly */
-    border-radius: 0px; /* No border-radius to match layout */
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-@media (max-width: 1024px) {
+
+/* Responsive Design */
+@media (max-width: 825px) {
     .info {
+        margin-top: 80px; /* Increase margin to separate sections */
         padding: 40px 3%;
-    }
-
-    .info-box h2 {
-        font-size: 24px;
-    }
-
-    .info-box p {
-        font-size: 16px;
-    }
-}
-@media (max-width: 800px) {
-    .info {
-        width: 100%;
-        padding: 0 5%;
     }
 
     .info-container1,
     .info-container2 {
-        display: flex;
-        margin-top: 50px;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 40px;
         width: 100%;
     }
 
@@ -97,39 +91,23 @@
         flex-direction: column-reverse;
     }
 
-    /* --- INFO BOX --- */
+    /* Ensure info-box and image box are same size */
+    .info-box,
+    .info-box-img {
+        width: 100%;
+        max-width: 100%;
+        min-height: 400px;
+    }
+
     .info-box {
-        width: 90%;
-        max-width: 700px;
         padding: 40px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background: white;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        border-radius: 8px;
-        overflow: hidden;
         text-align: center;
     }
 
-    /* --- IMAGE INSIDE INFO-BOX --- */
-    .info-box img {
-        width: 100%; /* Full width of info-box */
-        max-width: 100%; /* Prevents overflow */
-        height: auto; /* Keeps aspect ratio */
-        object-fit: cover; /* Makes sure it fills space properly */
-        display: block;
-        border-radius: 8px;
-        margin-bottom: 20px; /* Adds space below the image */
-    }
-
-    .info-box h2 {
-        font-size: 24px;
-        margin-bottom: 15px;
-    }
-
-    .info-box p {
-        font-size: 16px;
-        line-height: 1.5;
+    /* Prevent Image Splitting */
+    .info-box-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
