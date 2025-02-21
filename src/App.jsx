@@ -4,7 +4,7 @@ import Footer from './Components/Footer/Footer'
 import "./App.css"
 import Information from './Components/Information/Information'
 import Projects from './Components/Projects/Projects'
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import Contact from './Components/Contact/Contact'
 
 
 const App = () => {
@@ -14,6 +14,7 @@ const App = () => {
       <Home/>
       <Information/>
       <Projects/>
+      <Contact/>
       <Footer/>
     </div>
   )
