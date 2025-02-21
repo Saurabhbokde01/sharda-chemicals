@@ -1,0 +1,222 @@
+.projects {
+    background-color: white;
+    padding: 50px 5%;
+    text-align: center;
+  }
+  
+  /* Main Heading */
+  .projects h2 {
+    color: #0c2757;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for project boxes and about section */
+  .projects-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px; /* Added margin to prevent overlap */
+  }
+  
+  /* Projects box section */
+  .projects-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid layout */
+    gap: 20px;
+    width: 50%;
+  }
+  
+  /* Individual project boxes */
+  .project-box-1,
+  .project-box-2,
+  .project-box-3,
+  .project-box-4 {
+    background: #f8f9fa; /* Light blue-gray for visibility */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+    text-align: left;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 140px;
+    border: 1px solid #ddd;
+    transition: all 0.4s ease-in-out; 
+  }
+ /* Modern Hover Effect for Project Boxes */
+.project-box-1:hover,
+.project-box-2:hover,
+.project-box-3:hover,
+.project-box-4:hover {
+  transform: scale(1.1) translateY(-10px); /* Increase size + float */
+  /* background: radial-gradient(circle, #ffffff 30%, #f1f1f1 100%); */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25), 
+              0 10px 20px rgba(0, 0, 0, 0.15); /* Depth shadow */
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  padding: 20px; /* Add padding to avoid element collision */
+}
+
+/* Project Box Heading */
+.project-box-heading {
+  display: flex;
+  align-items: center; /* Align icon and heading properly */
+  gap: 12px; /* Add space between icon and text */
+}
+
+/* Icon Animation */
+.project-box-1:hover .project-box-heading svg,
+.project-box-2:hover .project-box-heading svg,
+.project-box-3:hover .project-box-heading svg,
+.project-box-4:hover .project-box-heading svg {
+  transform: rotateY(360deg); /* Rotate icon */
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Heading Animation */
+.project-box-1:hover h4,
+.project-box-2:hover h4,
+.project-box-3:hover h4,
+.project-box-4:hover h4 {
+  transform: scale(1.1); /* Slight pop effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Text Sliding Effect */
+.project-box-1:hover .project-box-desc,
+.project-box-2:hover .project-box-desc,
+.project-box-3:hover .project-box-desc,
+.project-box-4:hover .project-box-desc {
+  transform: translateX(8px); /* Moves slightly on hover */
+  transition: transform 0.3s ease-in-out;
+  text-align: justify; /* Keep text aligned properly */
+}
+
+/* Flash Shine Effect */
+.project-box-1:hover::before,
+.project-box-2:hover::before,
+.project-box-3:hover::before,
+.project-box-4:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, 
+                                      rgba(255, 255, 255, 0.3) 50%, 
+                                      rgba(255, 255, 255, 0) 100%);
+  transform: skewX(-25deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.project-box-1:hover::before,
+.project-box-2:hover::before,
+.project-box-3:hover::before,
+.project-box-4:hover::before {
+  left: 100%;
+}
+
+
+  
+  /* Heading inside project boxes */
+  .project-box-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #D4AF37;
+  }
+  .project-box-heading svg {
+    font-size: 28px; /* Adjust icon size */
+    color: #D4AF37; /* Golden color */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover */
+  }
+  
+  /* Description inside project boxes */
+  .project-box-desc {
+    font-size: 16px;
+    text-align: justify;
+    color: #333;
+    margin-top: 8px;
+  }
+  /* About section */
+  .about {
+    width: 45%;
+    text-align: left;
+  }
+  
+  .about-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #333;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects-box {
+      width: 100%;
+    }
+  
+    .project-box-1,
+    .project-box-2,
+    .project-box-3,
+    .project-box-4 {
+      width: 100%;
+    }
+  
+    .about {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media (max-width: 530px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .projects-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column; /* Stack project boxes vertically */
+      align-items: center;
+    }
+  
+    .project-box-1,
+    .project-box-2,
+    .project-box-3,
+    .project-box-4 {
+      width: 90%; /* Make project boxes take up most of the width */
+      text-align: center; /* Center align text */
+      padding: 20px;
+    }
+    .project-box-1:hover .project-box-desc,
+  .project-box-2:hover .project-box-desc,
+  .project-box-3:hover .project-box-desc,
+  .project-box-4:hover .project-box-desc {
+    text-align: center; /* Shift slightly for hover effect */
+  }
+  
+    .project-box-heading {
+      justify-content: center; /* Center heading content */
+    }
+  
+    .project-box-desc {
+      text-align: center; /* Center description text */
+    }
+  }
+  
