@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 100vh;
     padding-top: 40px;
-    background: url("../../assets/home5.png") no-repeat center center/cover;
+    background: url("../../assets/home6.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
     padding-left: 10%;
@@ -38,13 +38,13 @@
 .name p:first-child{
     font-size: 60px;
     font-weight: bold;
-    color: rgb(45, 150, 248);
+    color: #0c2757;
     margin: 0;
 }
 .name p:last-child{
     font-size: 60px;
     font-weight: bold;
-    color: rgb(45, 150, 248);
+    color: #0c2757;
     margin: 0;
 }
 
@@ -69,8 +69,8 @@
     transition: opacity 0.5s ease-in-out;
 }
 .desc p h2{
-    font-weight: 500;
-    color: #FFD700;
+    font-weight: 600;
+    color: #e2bb39;
     line-height: 1.6;
     transition: opacity 0.5s ease-in-out;
 }

@@ -12,7 +12,7 @@
 .info h2 {
     font-size: 32px; /* Adjust as needed */
     font-weight: bold;
-    color: rgb(45, 150, 248); /* Dark grey for better readability */
+    color: #0c2757; /* Dark grey for better readability */
     text-align: center;
     line-height: 1.4;
 }
@@ -67,7 +67,9 @@
 /* Headings and Paragraph */
 .info-box h2 {
     font-size: 28px;
-    color: #FFD700;
+    line-height: 1.6;
+    font-weight: 600;
+    color: #D4AF37;
     margin-bottom: 15px;
 }
 

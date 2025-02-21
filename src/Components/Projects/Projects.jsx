@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faDiagramProject} from "@fortawesome/free-solid-svg-icons"
+import {faDiagramProject, faUserTie, faMedal, faPeopleGroup} from "@fortawesome/free-solid-svg-icons"
 import "./Projects.css";
 
 const Projects = () => {
@@ -8,11 +8,17 @@ const Projects = () => {
       <h2>About Sharda Chemicals</h2>
       <div className="projects-box">
         <div className="project-box-1">
-        <FontAwesomeIcon icon={faDiagramProject} style={{color: "#FFD43B",}} />
+        <FontAwesomeIcon icon={faDiagramProject} style={{color: "#d4af37",}} />
         </div>
-        <div className="project-box-2"></div>
-        <div className="project-box-3"></div>
-        <div className="project-box-4"></div>
+        <div className="project-box-2">
+        <FontAwesomeIcon icon={faUserTie} style={{color: "#d4af37",}} />
+        </div>
+        <div className="project-box-3">
+        <FontAwesomeIcon icon={faMedal} style={{color: "#d4af37",}} />
+        </div>
+        <div className="project-box-4">
+        <FontAwesomeIcon icon={faPeopleGroup} style={{color: "#d4af37",}} />
+        </div>
       </div>
       <div className="about"></div>
     </div>
