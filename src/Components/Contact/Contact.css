@@ -1,0 +1,175 @@
+/* General Styling */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background-color: #f8f9fa;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Side Styling */
+.contact-left {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+.contact-heading h2 {
+    color: #0c2757;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-heading p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+.contact-form-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.contact-form-group label {
+    background: #FFC107;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    min-width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form-group input,
+.contact-form-group textarea {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+    width: 100%;
+}
+
+.contact-form-group input:focus,
+.contact-form-group textarea:focus {
+    border-color: #0c2757;
+    background: white;
+}
+
+/* Special Styling for Textarea */
+.contact-form-group.textarea-group {
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form-group.textarea-group label {
+    width: 100%;
+    background: #FFC107;
+    border-radius: 5px 5px 0 0;
+}
+
+.contact-form-group.textarea-group textarea {
+    border-radius: 0 0 5px 5px;
+    height: 180px;
+    resize: vertical;
+}
+
+/* Buttons */
+.contact-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: flex-start;
+}
+
+.contact-buttons button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    background: #FFC107;
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background: #e0a800;
+}
+
+/* Reset Button */
+.reset-btn {
+    background: #23272b;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reset-btn:hover {
+    background: #1d2124;
+}
+
+/* Right Side Styling */
+.contact-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+}
+
+.contact-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #D4AF37;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #D4AF37;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-right p {
+    margin-top: 5px;
+    color: #333;
+    font-size: 14px;
+}
