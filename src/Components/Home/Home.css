@@ -35,18 +35,51 @@
     line-height: 1.1;
     margin-bottom: 50px;
 }
-.name p:first-child{
+.name p {
     font-size: 60px;
     font-weight: bold;
     color: #0c2757;
     margin: 0;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
 }
-.name p:last-child{
-    font-size: 60px;
-    font-weight: bold;
-    color: #0c2757;
-    margin: 0;
+
+.name p span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: slideUp 0.8s ease-out forwards;
 }
+
+/* Delay each letter */
+.name p:first-child span {
+    animation-delay: calc(var(--i) * 0.05s);
+}
+
+.name p:last-child span {
+    animation-delay: calc(var(--i) * 0.05s + 0.3s);
+}
+.name p:last-child  {
+    margin-top: -15px;
+}
+
+/* Slide-up animation */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
 
 .desc {
     background: rgba(255, 255, 255, 0.1);

@@ -17,10 +17,18 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home-container">
-        <div className="name">
-          <p>SHARDA</p>
-          <p>CHEMICALS</p>
-        </div>
+      <div className="name">
+        <p>
+          {"SHARDA".split("").map((char, i) => (
+            <span key={i} style={{ "--i": i }}>{char}</span>
+          ))}
+        </p>
+        <p>
+          {"CHEMICALS".split("").map((char, i) => (
+            <span key={i} style={{ "--i": i }}>{char}</span>
+          ))}
+        </p>
+  </div>
         <div className="desc">
           <p className={activeIndex === 0 ? "active" : ""}>
             <h2>About Sharda Chemicals :</h2>
