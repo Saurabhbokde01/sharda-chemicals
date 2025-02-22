@@ -34,7 +34,7 @@ const Contact = () => {
 
           <div className="contact-form-group textarea-group">
             <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" placeholder="Please define your query"></textarea>
+            <textarea id="message" name="message" placeholder="Please Enter Your Message"></textarea>
           </div>
 
           <div className="contact-buttons">
