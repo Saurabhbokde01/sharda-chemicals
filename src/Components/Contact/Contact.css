@@ -197,14 +197,14 @@
     color: #D4AF37;
   }
   
-  .contact-info h4 {
-    font-size: 1.3rem;
+  .contact-info-header h4 {
+    font-size: 1.2rem;
     color: #D4AF37;
     font-weight: 600;
     margin: 0;
   }
   
-  .contact-info p {
+  .contact-info-box p {
     margin-top: 5px;
     color: #4b5563;
     font-size: 1rem;

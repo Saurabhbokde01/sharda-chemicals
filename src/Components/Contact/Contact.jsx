@@ -53,7 +53,7 @@ const Contact = () => {
         <div className="contact-info-box">
           <div className="contact-info-header">
             <FontAwesomeIcon icon={faLocationDot} flip className="contact-icon" />
-            <h4>Company Location</h4>
+            <h4>Office Location</h4>
           </div>
           <p>Plot no 29, Old subhedar layout, Sharda Square, Nagpur-440024</p>
         </div>
