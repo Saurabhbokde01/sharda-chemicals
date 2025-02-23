@@ -32,8 +32,8 @@ const Footer = () => {
           <h4>CONNECT WITH US</h4>
         </div>
         <div className="footer-3-icons">
-          <img src={facebook_icon} alt="facebook" />
-          <img src={insta_icon} alt="instagram" />
+          <a href="#"><img src={facebook_icon} alt="facebook" /></a>
+          <a href="#"><img src={insta_icon} alt="instagram" /></a>
         </div>
       </div>
       </div>

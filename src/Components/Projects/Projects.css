@@ -110,6 +110,12 @@
     grid-template-columns: repeat(2, 1fr);
     width: 90%;
   }
+  .projects h2 {
+    color: #0c2757;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -126,5 +132,11 @@
   .project-box-4 {
     width: 100%;
     max-width: 400px;
+  }
+  .projects h2 {
+    color: #0c2757;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
   }
 }
