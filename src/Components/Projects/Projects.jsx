@@ -5,7 +5,7 @@ import "./Projects.css";
 const Projects = () => {
   return (
     <div className="projects">
-      <h2>About Sharda Chemicals</h2>
+      <h2>Key Highlights of Sharda Chemicals</h2>
       <div className="projects-container">
   <div className="projects-box">
     <div className="project-box-1">

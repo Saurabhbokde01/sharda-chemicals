@@ -28,14 +28,14 @@
   }
   
   .contact-heading h2 {
-    font-size: 2rem;
+    font-size: 32px;
     color: #0c2757;
     margin-bottom: 15px;
     font-weight: 700;
     text-align: left;
   }
   .contact-heading h2 span{
-    margin-left: 2px;
+    margin-left: 3px;
   }
   
   .contact-heading p {
