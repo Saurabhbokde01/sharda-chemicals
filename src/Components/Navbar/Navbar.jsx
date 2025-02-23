@@ -3,8 +3,7 @@ import logo from "../../assets/logo2-bg.png";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Navbar.css";
 
-const Navbar = () => {
-  const [activeTab, setActiveTab] = useState("Home");
+const Navbar = ({ setActiveTab, activeTab }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
@@ -37,7 +36,7 @@ const Navbar = () => {
       </div>
 
       {/* Sidebar Component */}
-      <Sidebar isOpen={sidebarOpen} toggleSidebar={() => setSidebarOpen(!sidebarOpen)} />
+      <Sidebar isOpen={sidebarOpen} toggleSidebar={() => setSidebarOpen(!sidebarOpen)} setActiveTab={setActiveTab} activeTab={activeTab} />
     </div>
   );
 };
