@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f9fa;
+  background-color: white;
   padding: 60px 20px;
   min-height: 100vh;
   overflow: hidden;
@@ -26,7 +26,7 @@
 }
 
 .about-box {
-  background: white;
+  background: #f8f9fa;
   padding: 35px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -43,8 +43,8 @@
 }
 
 .about-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeInUp {
