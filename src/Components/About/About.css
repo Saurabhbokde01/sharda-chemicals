@@ -2,10 +2,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  padding: 60px 20px;
-  min-height: auto;
+  background-color:  #d7eaf1 ;
+  padding: 100px 20px 60px; /* Adjusted padding to push content below navbar */
+  min-height: 100vh;
   overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .about-container {
@@ -27,25 +29,43 @@
 
 .about-box {
   background: #f8f9fa;
-  padding: 35px;
-  border-radius: 12px;
+  padding: 40px;
+  border-radius: 18px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   flex: 1;
-  max-width: 500px;
-  height: auto;
-  min-height: 450px;
+  max-width: 520px;
+  min-height: 460px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  animation: fadeInUp 0.8s ease-out forwards;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.4s ease-in-out;
+  animation: floatEffect 3s infinite ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
+/* 🔥 Enhanced Hover Effect */
 .about-box:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  transform: scale(1.2);
+  box-shadow: 0 20px 50px rgba(194, 216, 231, 0.8);
 }
+
+/* 🔥 Dynamic Floating Effect */
+@keyframes floatEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 
 @keyframes fadeInUp {
   from {

@@ -9,6 +9,7 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 import "./App.css";
 import About from "./Components/About/About";
+import Products from "./Components/Products/Products";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("Home");
@@ -56,7 +57,7 @@ const App = () => {
             <Projects/>
             <Contact/>
           </>}
-          {activeTab === "Products" && <Information />}
+          {activeTab === "Products" && <Products/> }
           {activeTab === "About Us" && 
           <>
             <About/>
