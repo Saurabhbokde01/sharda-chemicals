@@ -69,10 +69,12 @@
 }
 
 /* Image Styling */
-.product-img {
-  flex: 1;
-  max-width: 400px; /* Consistent size */
-  height: 300px; /* Ensure uniformity */
+.product-img,
+.slider-image img,
+.single-image img {
+  max-width: 100% !important; 
+  height: auto !important; /* Keep aspect ratio */
+  object-fit: cover;
 }
 
 /* Ensure the slider fits perfectly */
@@ -187,6 +189,12 @@
 @media (max-width: 1024px) {
   .products-container {
     padding: 40px 8%;
+  }
+  .product-img,
+  .slider-image img,
+  .single-image img {
+    display: block !important;
+    visibility: visible !important;
   }
 
   .product-content-wrapper {
