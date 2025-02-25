@@ -8,9 +8,9 @@ const products = [
   {
     id: 1,
     title: "1. Hardener for Paver & Block",
-    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475309/products/eub6prnzhgtuob8szlcx.webp", 
-    "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475306/products/vwaioulv1991xlbgdi4a.webp",
-    "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475300/products/wt036kvmerff3d22knsc.webp"],
+    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475309/products/eub6prnzhgtuob8szlcx.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740489514/products/google%20products/yjtzchdfqdfg4icqxzw7.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740489512/products/google%20products/hupquiko2qb65gxslzal.webp",
+    "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475306/products/vwaioulv1991xlbgdi4a.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740489507/products/google%20products/r4kozbyhibi6fabbsfsj.jpg",
+    "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475300/products/wt036kvmerff3d22knsc.webp","https://res.cloudinary.com/de2lex5zv/image/upload/v1740489505/products/google%20products/qoa3rudmobizotlguvo4.webp  "],
     details: [
       "Greed M-70 to M-80.",
       "It takes 7 to 8 hours for setting after filling mold.",

@@ -64,7 +64,6 @@ const App = () => {
             <Home />
             <Information/>
             <Projects/>
-            <Contact/>
           </>}
           {activeTab === "Products" && <Products/> }
           {activeTab === "About Us" && 

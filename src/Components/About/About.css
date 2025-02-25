@@ -2,19 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:  #d7eaf1 ;
-  padding: 100px 20px 60px; /* Adjusted padding to push content below navbar */
-  min-height: 100vh;
-  overflow: hidden;
-  position: relative;
+  background-color: #d7eaf1;
+  padding: 80px 0; /* Reduce top & bottom padding */
+  min-height: auto; /* Remove fixed height */
   width: 100%;
 }
+
 
 .about-container {
   display: flex;
   gap: 50px;
-  max-width: 1100px;
-  justify-content: center;
+  max-width: 1400px; /* Increased max-width */
+  width: 90%; /* Allow it to stretch */
+  justify-content: space-between; /* Ensures boxes take up space */
   align-items: flex-start;
   text-align: center;
   opacity: 0;
@@ -22,24 +22,26 @@
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+
+
 .about-container.fade-in {
   opacity: 1;
   transform: translateY(0);
 }
 
 .about-box {
-  background: #f8f9fa;
+  flex: 1; /* Allow it to expand */
+  max-width: 48%; /* Avoids too much shrinking */
+  min-height: 460px;
   padding: 40px;
+  background: #f8f9fa;
   border-radius: 18px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  max-width: 520px;
-  min-height: 460px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.4s ease-in-out;
   animation: floatEffect 3s infinite ease-in-out;
   position: relative;
@@ -106,6 +108,12 @@
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+  .about-container {
+    gap: 30px; /* Reduce gap */
+  }
+}
+
 @media (max-width: 1024px) {
   .about-container {
     gap: 30px;
