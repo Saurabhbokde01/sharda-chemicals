@@ -24,7 +24,7 @@ const Contact = () => {
 
           <div className="contact-form-group">
             <label htmlFor="contact">Contact</label>
-            <input type="number" id="contact" placeholder="Your Contact No." required />
+            <input type="text" id="contact" placeholder="Your Contact No." required />
           </div>
 
           <div className="contact-form-group">
@@ -56,6 +56,14 @@ const Contact = () => {
             <h4>Office Location</h4>
           </div>
           <p>Plot no 29, Old subhedar layout, Sharda Square, Nagpur-440024</p>
+        </div>
+
+        <div className="contact-info-box">
+          <div className="contact-info-header">
+            <FontAwesomeIcon icon={faLocationDot} flip className="contact-icon" />
+            <h4>Office Location 2</h4>
+          </div>
+          <p>Ram Cooler road, New Shukarawari, Nagpur-440032</p>
         </div>
 
         <div className="contact-info-box">

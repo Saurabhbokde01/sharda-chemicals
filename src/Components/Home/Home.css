@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     padding-top: 80px; /* Reduced padding to avoid excessive spacing */
-    background: url("../../assets/temp1.png") no-repeat center center/cover;
+    background: url("https://res.cloudinary.com/de2lex5zv/image/upload/v1740476515/injd7pontquxm3quecf5.png") no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Center content */

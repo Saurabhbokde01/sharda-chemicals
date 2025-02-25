@@ -4,34 +4,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Products.css";
 
-import p1_img1 from "../../assets/product/paver1.webp";
-import p1_img2 from "../../assets/product/paver2.webp";
-import p1_img3 from "../../assets/product/paver3.webp";
-
-import p2_img1 from "../../assets/product/pipes1.webp";
-import p2_img2 from "../../assets/product/pipes2.webp";
-import p2_img3 from "../../assets/product/pipes3.webp";
-
-import p3_img1 from "../../assets/product/stone1.webp";
-import p3_img2 from "../../assets/product/stone2.webp";
-import p3_img3 from "../../assets/product/stone3.webp";
-
-import p4_img1 from "../../assets/product/mold1.webp";
-import p4_img2 from "../../assets/product/mold2.webp";
-
-import p5_img1 from "../../assets/product/oxide1.webp";
-import p5_img2 from "../../assets/product/oxide2.webp";
-
-import p6_img1 from "../../assets/product/coat1.webp";
-import p6_img2 from "../../assets/product/coat2.webp";
-
-import p7_img1 from "../../assets/product/pc1.webp";
-import p7_img2 from "../../assets/product/pc2.webp";
-import p7_img3 from "../../assets/product/pc3.webp";
-import p7_img4 from "../../assets/product/pc4.webp";
-import p7_img5 from "../../assets/product/pc5.webp";
-import p7_img6 from "../../assets/product/pc6.webp";
-
 const products = [
   {
     id: 1,

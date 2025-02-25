@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./Components/Navbar/Navbar";
 import Sidebar from "./Components/Sidebar/Sidebar";
@@ -12,8 +12,17 @@ import About from "./Components/About/About";
 import Products from "./Components/Products/Products";
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState("Home");
+  // ✅ Retrieve the last active tab from localStorage (default: Home)
+  const [activeTab, setActiveTab] = useState(() => {
+    return localStorage.getItem("activeTab") || "Home";
+  });
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  useEffect(() => {
+    // ✅ Save active tab to localStorage whenever it changes
+    localStorage.setItem("activeTab", activeTab);
+  }, [activeTab]);
 
   const handleNavbarTabChange = (newTab) => {
     if (activeTab !== newTab) {
@@ -40,7 +49,7 @@ const App = () => {
         isOpen={isSidebarOpen}
         toggleSidebar={toggleSidebar}
         setActiveTab={handleSidebarTabChange}
-        activeTab={activeTab} 
+        activeTab={activeTab}
       />
       <AnimatePresence mode="wait">
         <motion.div
@@ -63,7 +72,6 @@ const App = () => {
             <About/>
             <Information/>
             <Projects />
-            <Contact/>
           </>}
           {activeTab === "Contact" && <Contact />}
           <Footer />

@@ -170,7 +170,7 @@
   
   .contact-info-box {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     align-items: left;
     flex-direction: column;
     gap: 15px;
