@@ -1,3 +1,40 @@
+/* Fade-in and Slide-up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Initial hidden state */
+.products-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* When the component is ready */
+.products-container.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide-up effect for each product */
+.product-box {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.product-box.slide-up {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Product Container */
 .products-container {
   background-color: #f8f9fa;
@@ -75,8 +112,6 @@
   border-radius: 10px;
 }
 
-
-
 /* Ensuring Single Image is Centered */
 .single-image img {
   width: 400px;  /* Fixed width */
@@ -93,7 +128,6 @@
   height: 300px; /* Match slider height */
   overflow: hidden; /* Prevents stretching */
 }
-
 
 /* Content Styling */
 .product-content {
@@ -204,6 +238,7 @@
     height: 270px;
   }
 }
+
 @media (max-width: 900px) {
   .slider-image img,
   .single-image img {
@@ -217,7 +252,6 @@
     height: 250px;
   }
 }
-
 
 /* For screens up to 800px */
 @media (max-width: 800px) {

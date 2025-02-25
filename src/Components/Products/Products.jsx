@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -59,11 +59,11 @@ const products = [
   {
     id: 4,
     title: "4. Mold Release Agent",
-    images: [p4_img1], // Single Image
+    images: [p4_img1],
     details: [
-      "In 1 liter of Mold release agent, 4 liters of water should be added.Prevents concrete from sticking to molds.",
+      "In 1 liter of Mold release agent, 4 liters of water should be added.",
+      "Prevents concrete from sticking to molds.",
       "The coating and the mold release agent have the latest technology.",
-      "Based on PTFE, Fluoric Chemical, and resin base formulation.",
     ],
   },
   {
@@ -79,7 +79,7 @@ const products = [
   {
     id: 6,
     title: "6. Surface Coating",
-    images: [p6_img1], // Single Image
+    images: [p6_img1],
     details: [
       "In 1 liter, it covers 100-120 sq. feet area.",
       "Expires in 6 months from manufacturing.",
@@ -89,29 +89,34 @@ const products = [
 
 const Products = () => {
   const sliders = useRef([]);
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation on mount
+    setTimeout(() => {
+      setAnimate(true);
+    }, 100);
+  }, []);
 
   const sliderSettings = {
-    dots: false,  // Remove bottom dots
+    dots: false,
     infinite: true,
     speed: 800,
-    slidesToShow: 1,  // Only show one image at a time
+    slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    adaptiveHeight: false, 
-    centerMode: false,  // Ensure only one image is visible
-    variableWidth: false,  // Prevent extra spacing
-    arrows: false,  // Hide navigation arrows (optional)
+    adaptiveHeight: false,
+    centerMode: false,
+    variableWidth: false,
+    arrows: false,
   };
-  
-  
-  
 
   return (
-    <section className="products-container">
+    <section className={`products-container ${animate ? "animate" : ""}`}>
       <h2 className="products-heading">Our Products</h2>
       {products.map((product, index) => (
-        <div key={product.id} className="product-box">
+        <div key={product.id} className={`product-box ${animate ? "slide-up" : ""}`}>
           <div className="product-content-wrapper">
             <div className="product-img">
               {product.images.length > 1 ? (
