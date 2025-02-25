@@ -36,7 +36,9 @@ const products = [
   {
     id: 1,
     title: "1. Hardener for Paver & Block",
-    images: [p1_img1, p1_img2, p1_img3],
+    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475309/products/eub6prnzhgtuob8szlcx.webp", 
+    "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475306/products/vwaioulv1991xlbgdi4a.webp",
+    "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475300/products/wt036kvmerff3d22knsc.webp"],
     details: [
       "Greed M-70 to M-80.",
       "It takes 7 to 8 hours for setting after filling mold.",
@@ -46,21 +48,25 @@ const products = [
   {
     id: 2,
     title: "2. Hardener for RCC Pipes, Fencing Poles & RCC Electricity Poles",
-    images: [p2_img1, p2_img2, p2_img3],
+    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475319/products/qedkpatbmvavt2exahzd.webp", 
+     "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475312/products/tcdhvq6hejqx4c6cczql.webp",
+    "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475322/products/yly6lsmumeemjqw541mf.webp"],
     details: [
     ],
   },
   {
     id: 3,
     title: "3. Hardener for Crub Stone, MileStone & Road Divider",
-    images: [p3_img1, p3_img2, p3_img3],
+    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475319/products/lqbkkfrepcki3ycrlktf.webp", 
+      "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475322/products/stone2.webp", 
+      "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475321/products/ly6xeoxuhdgx2rwuouth.webp"],
     details: [
     ],
   },
   {
     id: 4,
     title: "4. Surface Coating (Lacquer)",
-    images: [p6_img1, p6_img2],
+    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475294/products/dyi29nggwz8lus08gjpe.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475293/products/mtfbifitvlbdoehkenkb.webp"],
     details: [
       "In 1 liter, it covers 100-120 sq. feet area.",
       "Expires in 6 months from manufacturing.",
@@ -69,14 +75,16 @@ const products = [
   {
     id: 5,
     title: "5. pc base melamine hardener for paver block, rcc pipes, fencing poles, rcc electricity poles, concrete floor and cement rodes",
-    images: [p7_img1, p7_img2, p7_img3, p7_img4, p7_img5, p7_img6],
+    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475307/products/idim7a0h8xvxolf5tnqe.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475303/products/ykntpqmxqmst7haypx4i.webp", 
+      "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475322/products/hvuhkzwtuz3ajqq59usk.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475301/products/at5wbldc7zrdjscfv3fu.webp", 
+      "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475308/products/ybdfqsyxsfvn9zdcetxk.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475307/products/nxls90ksgdvaxsuwjnwo.webp"],
     details: [
     ],
   },
   {
     id: 6,
     title: "6. Mold Release Agent",
-    images: [p4_img1, p4_img2],
+    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475292/products/vrincbbv7qodloxouhh9.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475292/products/qr4ktdtwc4vaok5o88xf.webp"],
     details: [
       "In 1 liter of Mold release agent, 4 liters of water should be added.",
       "Prevents concrete from sticking to molds.",
@@ -86,7 +94,7 @@ const products = [
   {
     id: 7,
     title: "7. Colour-Oxide",
-    images: [p5_img1, p5_img2],
+    images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475294/products/bk6to6et08mizvrihogg.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475293/products/v8qgz2b8gbnw12jb4m86.webp"],
     details: [
       "Red - 25 KG Packing.",
       "Yellow - 25 KG Packing.",
