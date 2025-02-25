@@ -12,6 +12,7 @@
 
 /* Initial hidden state */
 .products-container {
+  overflow: visible !important;
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -69,12 +70,19 @@
 }
 
 /* Image Styling */
-.product-img,
+.product-img img,
 .slider-image img,
 .single-image img {
-  max-width: 100% !important; 
-  height: auto !important; /* Keep aspect ratio */
-  object-fit: cover;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-width: 250px; /* Ensure it's not collapsing */
+  max-width: 100%;
+  height: auto;
+}
+.product-img {
+  position: relative;
+  min-height: 250px; /* Prevent it from collapsing */
 }
 
 /* Ensure the slider fits perfectly */

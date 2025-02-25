@@ -59,7 +59,7 @@ const products = [
   },
   {
     id: 4,
-    title: "4. Surface Coating",
+    title: "4. Surface Coating (Lacquer)",
     images: [p6_img1, p6_img2],
     details: [
       "In 1 liter, it covers 100-120 sq. feet area.",
