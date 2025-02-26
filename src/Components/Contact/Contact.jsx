@@ -36,8 +36,9 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container"> {/* Main Contact Section */}
-      <div className="contact-left"> {/* Left Side - Form Section */}
+    <div className="contact-container">
+      {/* Left Side - Form Section */}
+      <div className="contact-left">
         <div className="contact-heading">
           <h2>
             Contact Us
@@ -67,7 +68,7 @@ const Contact = () => {
               pattern="[0-9]{10}"
               inputMode="numeric"
               maxLength="10"
-              onInput={(e) => e.target.value = e.target.value.replace(/\D/g, '').slice(0, 10)}
+              onInput={(e) => (e.target.value = e.target.value.replace(/\D/g, "").slice(0, 10))}
             />
           </div>
 
@@ -105,14 +106,17 @@ const Contact = () => {
         )}
       </div>
 
-      <div className="contact-right"> {/* Right Side - Contact Info */}
+      {/* Right Side - Contact Info */}
+      <div className="contact-right">
         <div className="contact-info-box">
           <div className="contact-info-header">
             <FontAwesomeIcon icon={faLocationDot} flip className="contact-icon" />
             <h4>Office Location</h4>
           </div>
-          <p>📍 Plot no 29, Old subhedar layout, Sharda Square, Nagpur-440024 <br /><br />
-          📍 Ram Cooler road, New Shukarawari, Nagpur-440032
+          <p>
+            📍 Plot no 29, Old subhedar layout, Sharda Square, Nagpur-440024 <br />
+            <br />
+            📍 Ram Cooler road, New Shukarawari, Nagpur-440032
           </p>
         </div>
 
@@ -121,7 +125,9 @@ const Contact = () => {
             <FontAwesomeIcon icon={faEnvelope} beatFade className="contact-icon" />
             <h4>Email</h4>
           </div>
-          <p>shardachemicals1@gmail.com</p>
+          <p>
+            <a href="mailto:shardachemicals1@gmail.com">shardachemicals1@gmail.com</a>
+          </p>
         </div>
 
         <div className="contact-info-box">
@@ -129,7 +135,11 @@ const Contact = () => {
             <FontAwesomeIcon icon={faMobileScreenButton} shake className="contact-icon" />
             <h4>Phone Numbers</h4>
           </div>
-          <p>+91 9423476195<br />+91 7083892200</p>
+          <p>
+            <a href="tel:+919423476195">+91 9423476195</a>
+            <br />
+            <a href="tel:+917083892200">+91 7083892200</a>
+          </p>
         </div>
       </div>
     </div>
