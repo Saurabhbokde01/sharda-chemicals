@@ -10,7 +10,12 @@ const Navbar = ({ setActiveTab, activeTab }) => {
     <div className="navbar">
       {/* Navbar-left */}
       <div className="navbar-left">
-        <a href="#"><img src={logo} alt="logo" /></a>
+      <a href="#" onClick={(e) => { 
+        e.preventDefault(); // Prevents page refresh
+        setActiveTab("Home");
+      }}>
+          <img src={logo} alt="logo" />
+        </a>
         <div className="logo-name">
           <p>SHARDA</p>
           <p>CHEMICALS</p>
