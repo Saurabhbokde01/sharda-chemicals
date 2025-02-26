@@ -46,7 +46,7 @@ const products = [
   },
   {
     id: 5,
-    title: "5. pc base melamine hardener for paver block, rcc pipes, fencing poles, rcc electricity poles, concrete floor and cement rodes",
+    title: "5. PC-Base Melamine hardener for paver block, rcc pipes, fencing poles, rcc electricity poles, concrete floor and cement rodes",
     images: ["https://res.cloudinary.com/de2lex5zv/image/upload/v1740475307/products/idim7a0h8xvxolf5tnqe.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475303/products/ykntpqmxqmst7haypx4i.webp", 
       "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475322/products/hvuhkzwtuz3ajqq59usk.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475301/products/at5wbldc7zrdjscfv3fu.webp", 
       "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475308/products/ybdfqsyxsfvn9zdcetxk.webp", "https://res.cloudinary.com/de2lex5zv/image/upload/v1740475307/products/nxls90ksgdvaxsuwjnwo.webp"],

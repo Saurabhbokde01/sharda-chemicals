@@ -30,9 +30,10 @@
 }
 
 .about-box {
-  flex: 1; /* Allow it to expand */
-  max-width: 48%; /* Avoids too much shrinking */
-  min-height: 460px;
+  flex: 1;
+  width: 100%;
+  max-width: 600px;
+  height: 620px;
   padding: 40px;
   background: #f8f9fa;
   border-radius: 18px;
@@ -119,22 +120,32 @@
     gap: 30px;
   }
   .about-box {
-    padding: 30px;
-    min-height: 400px;
+    max-width: 550px;
+    height: 650px;
+    padding: 35px;
   }
   .about-section {
     padding: 50px 10px;
   }
 }
+@media (max-width : 990){
+  .about-box{
+    max-width: 550px;
+    height: 690px;
+  }
+}
 
-@media (max-width: 940px) {
+@media (max-width: 950px) {
   .about-container {
     flex-direction: column;
     align-items: center;
   }
+
   .about-box {
-    max-width: 98%;
-    min-height: auto;
+    max-width: 600px;
+    width: 90%;
+    min-height: 420px;
+    padding: 30px;
   }
 }
 

@@ -42,8 +42,16 @@ const Footer = () => {
         </div>
         <div className="footer-3-icons">
           <a href="#"><img src={facebook_icon} alt="facebook" /></a>
-          <a href="#"><img src={insta_icon} alt="instagram" /></a>
-          <a href="#"><img src={linkedin_icon} alt="instagram" /></a>
+          <a href="https://www.instagram.com/shardachemicals_ngp?igsh=MWdpYWR0anJnNGIyYQ%3D%3D&utm_source=qr" 
+          target="_blank" 
+          rel="noopener noreferrer">
+            <img src={insta_icon} alt="instagram" />
+          </a>
+          <a href="https://www.linkedin.com/in/sharda-chemicals-48a580353/" 
+          target="_blank" 
+          rel="noopener noreferrer">
+            <img src={linkedin_icon} alt="linkedin" />
+          </a>
         </div>
       </div>
       </div>
