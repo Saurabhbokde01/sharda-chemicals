@@ -3,26 +3,24 @@
   justify-content: center;
   align-items: center;
   background-color: #d7eaf1;
-  padding: 80px 0; /* Reduce top & bottom padding */
-  min-height: auto; /* Remove fixed height */
+  padding: 80px 0;
+  min-height: auto;
   width: 100%;
 }
 
-
+/* Main Container */
 .about-container {
   display: flex;
   gap: 50px;
-  max-width: 1400px; /* Increased max-width */
-  width: 90%; /* Allow it to stretch */
-  justify-content: space-between; /* Ensures boxes take up space */
+  max-width: 1400px;
+  width: 90%;
+  justify-content: space-between;
   align-items: flex-start;
   text-align: center;
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
-
-
 
 .about-container.fade-in {
   opacity: 1;
@@ -42,21 +40,18 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.4s ease-in-out;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease-in-out;
   animation: floatEffect 3s infinite ease-in-out;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-/* 🔥 Enhanced Hover Effect */
 .about-box:hover {
   transform: scale(1.2);
   box-shadow: 0 20px 50px rgba(194, 216, 231, 0.8);
 }
 
-/* 🔥 Dynamic Floating Effect */
 @keyframes floatEffect {
   0% {
     transform: translateY(0);
@@ -68,7 +63,6 @@
     transform: translateY(0);
   }
 }
-
 
 @keyframes fadeInUp {
   from {
@@ -108,10 +102,9 @@
   margin-bottom: 26px;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .about-container {
-    gap: 30px; /* Reduce gap */
+    gap: 30px;
   }
 }
 
@@ -128,8 +121,9 @@
     padding: 50px 10px;
   }
 }
-@media (max-width : 990){
-  .about-box{
+
+@media (max-width: 990px) {
+  .about-box {
     max-width: 550px;
     height: 690px;
   }
@@ -140,7 +134,6 @@
     flex-direction: column;
     align-items: center;
   }
-
   .about-box {
     max-width: 600px;
     width: 90%;

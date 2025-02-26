@@ -41,7 +41,6 @@ const App = () => {
     setIsSidebarOpen(false);
   };
 
-  // Dynamic SEO metadata based on activeTab
   const getPageTitle = () => {
     switch (activeTab) {
       case "Home":
@@ -58,8 +57,7 @@ const App = () => {
   };
 
   return (
-    <div className="app">
-      {/* React Helmet for SEO */}
+    <div className="app"> {/* Main App Container */}
       <Helmet>
         <title>{getPageTitle()}</title>
         <meta name="description" content={`${getPageTitle()} - Learn more about us.`} />
@@ -74,6 +72,7 @@ const App = () => {
         setActiveTab={handleSidebarTabChange}
         activeTab={activeTab}
       />
+      
       <AnimatePresence mode="wait">
         <motion.div
           key={activeTab}

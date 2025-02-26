@@ -34,7 +34,6 @@
     transition: all 0.8s ease-in-out;
 }
 
-/* Hide all slides initially */
 .desc-content {
     display: none;
     opacity: 0;
@@ -42,7 +41,6 @@
     transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
 }
 
-/* Show the active slide with smooth fade and scale effect */
 .desc-content.active {
     display: block;
     opacity: 1;
@@ -61,7 +59,6 @@
     }
 }
 
-/* Title Styling with Separation */
 .desc-content h2 {
     font-size: 28px;
     font-weight: 700;
@@ -73,7 +70,6 @@
     letter-spacing: 1px;
 }
 
-/* Separator Line */
 .desc-content h2::after {
     content: "";
     display: block;
@@ -84,7 +80,6 @@
     border-radius: 2px;
 }
 
-/* Paragraph Text with More Spacing */
 .desc-content p {
     font-size: 18px;
     font-weight: 500;
@@ -103,7 +98,6 @@
     }
 }
 
-/* Buttons */
 .desc-btn {
     display: flex;
     justify-content: center;
@@ -128,7 +122,6 @@
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 1024px) {
     .home-container {
         max-width: 75%;
