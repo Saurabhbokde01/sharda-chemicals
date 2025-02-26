@@ -105,8 +105,8 @@ const Contact = () => {
             <FontAwesomeIcon icon={faLocationDot} flip className="contact-icon" />
             <h4>Office Location</h4>
           </div>
-          <p>📌 Plot no 29, Old subhedar layout, Sharda Square, Nagpur-440024 <br /><br />
-          📌 Ram Cooler road, New Shukarawari, Nagpur-440032
+          <p>📍 Plot no 29, Old subhedar layout, Sharda Square, Nagpur-440024 <br /><br />
+          📍 Ram Cooler road, New Shukarawari, Nagpur-440032
           </p>
         </div>
 

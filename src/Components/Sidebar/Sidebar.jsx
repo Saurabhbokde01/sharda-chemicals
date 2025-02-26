@@ -13,7 +13,14 @@ const Sidebar = ({ isOpen, toggleSidebar, setActiveTab, activeTab }) => {
   return (
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
       <div className="logo">
-        <img src={logo} alt="Logo" />
+      <a
+  href="#"
+  onClick={(e) => {
+    e.preventDefault(); // Prevents page refresh
+    setActiveTab("Home");
+    toggleSidebar(); // Close Sidebar
+  }}
+><img src={logo} alt="Logo" /></a>
         <div className="logo-name">
           <p>SHARDA</p>
           <p>CHEMICALS</p>
