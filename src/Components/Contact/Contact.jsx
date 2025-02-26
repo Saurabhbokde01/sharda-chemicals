@@ -59,9 +59,20 @@ const Contact = () => {
           </div>
 
           <div className="contact-form-group">
-            <label htmlFor="contact">Contact</label>
-            <input type="text" id="contact" name="entry.145055622" placeholder="Your Contact No." required />
-          </div>
+  <label htmlFor="contact">Contact</label>
+  <input
+    type="text"
+    id="contact"
+    name="entry.145055622"
+    placeholder="Your Contact No."
+    required
+    pattern="[0-9]{10}"
+    inputMode="numeric"
+    maxLength="10"
+    onInput={(e) => e.target.value = e.target.value.replace(/\D/g, '').slice(0, 10)}
+  />
+</div>
+
 
           <div className="contact-form-group">
             <label htmlFor="email">Email Address</label>
