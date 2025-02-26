@@ -11,7 +11,6 @@ const Information = () => {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    // Add class after a short delay for a smooth effect
     setTimeout(() => {
       setAnimate(true);
     }, 100);
@@ -35,8 +34,10 @@ const Information = () => {
   }, []);
 
   return (
+    /* Information Main Container */
     <div className={`info ${animate ? "animate" : ""}`}>
       <h2>Why Choose Sharda Chemicals ?</h2>
+
       <div className="info-container1">
         <div className={`info-box ${animate ? "slide-up" : ""}`}>
           <h2>Our Mission</h2>

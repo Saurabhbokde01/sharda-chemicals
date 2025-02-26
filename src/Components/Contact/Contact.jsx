@@ -15,10 +15,8 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault(); // Prevent default form submission
-
+    e.preventDefault();
     const formData = new FormData(e.target);
-
     const googleFormURL =
       "https://docs.google.com/forms/u/0/d/e/1FAIpQLSe1FZr6Jjcb9nFLWlRTBBrsrRw8FI6U6fALbUCoXvDhbxzljg/formResponse?pli=1";
 
@@ -29,8 +27,8 @@ const Contact = () => {
     })
       .then(() => {
         setSubmitted(true);
-        e.target.reset(); // Reset form after submission
-        setTimeout(() => setSubmitted(false), 5000); // Hide message after 5 sec
+        e.target.reset();
+        setTimeout(() => setSubmitted(false), 5000);
       })
       .catch((error) => {
         console.error("Error submitting form:", error);
@@ -38,11 +36,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-left">
+    <div className="contact-container"> {/* Main Contact Section */}
+      <div className="contact-left"> {/* Left Side - Form Section */}
         <div className="contact-heading">
           <h2>
-            Contact Us{" "}
+            Contact Us
             <span>
               <FontAwesomeIcon icon={faHeadphonesSimple} bounce style={{ color: "#0c2757" }} />
             </span>
@@ -59,20 +57,19 @@ const Contact = () => {
           </div>
 
           <div className="contact-form-group">
-  <label htmlFor="contact">Contact</label>
-  <input
-    type="text"
-    id="contact"
-    name="entry.145055622"
-    placeholder="Your Contact No."
-    required
-    pattern="[0-9]{10}"
-    inputMode="numeric"
-    maxLength="10"
-    onInput={(e) => e.target.value = e.target.value.replace(/\D/g, '').slice(0, 10)}
-  />
-</div>
-
+            <label htmlFor="contact">Contact</label>
+            <input
+              type="text"
+              id="contact"
+              name="entry.145055622"
+              placeholder="Your Contact No."
+              required
+              pattern="[0-9]{10}"
+              inputMode="numeric"
+              maxLength="10"
+              onInput={(e) => e.target.value = e.target.value.replace(/\D/g, '').slice(0, 10)}
+            />
+          </div>
 
           <div className="contact-form-group">
             <label htmlFor="email">Email Address</label>
@@ -86,13 +83,13 @@ const Contact = () => {
 
           <div className="contact-buttons">
             <button type="submit" className="submit-btn">
-              Submit{" "}
+              Submit
               <span>
                 <FontAwesomeIcon icon={faPaperPlane} />
               </span>
             </button>
             <button type="reset" className="reset-btn">
-              Reset{" "}
+              Reset
               <span>
                 <FontAwesomeIcon icon={faRotateRight} spin />
               </span>
@@ -100,7 +97,6 @@ const Contact = () => {
           </div>
         </form>
 
-        {/* Modern Success Message */}
         {submitted && (
           <div className="success-message">
             <FontAwesomeIcon icon={faCheckCircle} className="success-icon" />
@@ -109,8 +105,7 @@ const Contact = () => {
         )}
       </div>
 
-      {/* Right Side - Contact Info */}
-      <div className="contact-right">
+      <div className="contact-right"> {/* Right Side - Contact Info */}
         <div className="contact-info-box">
           <div className="contact-info-header">
             <FontAwesomeIcon icon={faLocationDot} flip className="contact-icon" />

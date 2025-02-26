@@ -3,17 +3,20 @@ import logo from "../../assets/logo2-bg.png";
 import Sidebar from "../Sidebar/Sidebar";
 import "./Navbar.css";
 
+// Main Navbar Component
 const Navbar = ({ setActiveTab, activeTab }) => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
     <div className="navbar">
-      {/* Navbar-left */}
       <div className="navbar-left">
-      <a href="#" onClick={(e) => { 
-        e.preventDefault(); // Prevents page refresh
-        setActiveTab("Home");
-      }}>
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            setActiveTab("Home");
+          }}
+        >
           <img src={logo} alt="logo" />
         </a>
         <div className="logo-name">
@@ -22,11 +25,10 @@ const Navbar = ({ setActiveTab, activeTab }) => {
         </div>
       </div>
 
-      {/* Navbar-right */}
       <div className="navbar-right">
         {["Home", "Products", "About Us", "Contact"].map((tab) => (
-          <p 
-            key={tab} 
+          <p
+            key={tab}
             className={activeTab === tab ? "active-tab" : ""}
             onClick={() => setActiveTab(tab)}
           >
@@ -35,13 +37,16 @@ const Navbar = ({ setActiveTab, activeTab }) => {
         ))}
       </div>
 
-      {/* Menu Icon (Visible on small screens) */}
       <div className="menu-icon" onClick={() => setSidebarOpen(!sidebarOpen)}>
         {sidebarOpen ? "✖" : "☰"}
       </div>
 
-      {/* Sidebar Component */}
-      <Sidebar isOpen={sidebarOpen} toggleSidebar={() => setSidebarOpen(!sidebarOpen)} setActiveTab={setActiveTab} activeTab={activeTab} />
+      <Sidebar
+        isOpen={sidebarOpen}
+        toggleSidebar={() => setSidebarOpen(!sidebarOpen)}
+        setActiveTab={setActiveTab}
+        activeTab={activeTab}
+      />
     </div>
   );
 };

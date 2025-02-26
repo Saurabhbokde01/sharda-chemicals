@@ -1,4 +1,22 @@
+/* -------- Sidebar Main Container -------- */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background-color: #091830;
+    color: white;
+    transition: left 0.3s ease-in-out;
+    padding-top: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    pointer-events: auto;
+    z-index: 9999;
+}
 
+.sidebar.open {
+    left: 0;
+}
 
 /* -------- Logo Section -------- */
 .logo {
@@ -10,13 +28,11 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Logo Image */
 .logo img {
     height: 50px;
     width: auto;
 }
 
-/* Logo Name Styling */
 .logo-name {
     display: flex;
     flex-direction: column;
@@ -25,44 +41,17 @@
     font-weight: 300;
 }
 
-/* First Line - Golden Text */
 .logo-name p:first-child {
     color: #D4AF37;
     margin: 0;
 }
 
-/* Second Line - White Text */
 .logo-name p:last-child {
     color: #ffffff;
     margin: 0;
 }
 
 /* -------- Sidebar Menu -------- */
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -280px; /* Initially hidden */
-    width: 280px;
-    height: 100%;
-    background-color: #091830;
-    color: white;
-    transition: left 0.3s ease-in-out;
-    padding-top: 60px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-    pointer-events: auto; /* Ensure clicks work */
-    z-index: 9999;
-}
-.sidebar {
-    /* Bring it to the front */
-  }
-  
-
-/* Show sidebar when open */
-.sidebar.open {
-    left: 0;
-}
-
-/* Sidebar menu items */
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -79,7 +68,7 @@
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 6px;
-    cursor: pointer; /* Ensure it's clickable */
+    cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
 
@@ -93,7 +82,7 @@
     font-weight: bold;
 }
 
-/* Hide sidebar on larger screens */
+/* -------- Responsive Design -------- */
 @media screen and (min-width: 800px) {
     .sidebar {
         display: none;

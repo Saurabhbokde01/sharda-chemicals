@@ -50,7 +50,6 @@
   transition: all 0.4s ease-in-out;
 }
 
-/* Hover Effects */
 .project-box-1:hover,
 .project-box-2:hover,
 .project-box-3:hover,
@@ -91,8 +90,6 @@
   margin-top: 8px;
 }
 
-
-/* Tag-Line Styling */
 .tag-line {
   margin-top: 40px;
   padding: 20px 10%;
@@ -108,7 +105,6 @@
   animation: fadeInUp 1s ease-in-out;
 }
 
-/* Add Animated Shine Effect */
 .tag-line::before {
   content: "";
   position: absolute;
@@ -121,7 +117,6 @@
   animation: shine 2.5s infinite linear;
 }
 
-/* Keyframe Animation */
 @keyframes shine {
   0% {
     left: -100%;
@@ -131,7 +126,6 @@
   }
 }
 
-/* Fade In Animation */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -143,7 +137,6 @@
   }
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .projects-box {
     width: 95%;
