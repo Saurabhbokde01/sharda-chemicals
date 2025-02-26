@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       handleNext();
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 
