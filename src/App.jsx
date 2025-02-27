@@ -59,10 +59,15 @@ const App = () => {
   return (
     <div className="app"> {/* Main App Container */}
       <Helmet>
-        <title>{getPageTitle()}</title>
-        <meta name="description" content={`${getPageTitle()} - Learn more about us.`} />
-        <meta name="keywords" content="Chemicals, Industrial Chemicals, Sharda Chemicals, Manufacturing" />
-        <meta name="author" content="Sharda Chemicals" />
+      <title>Sharda Chemicals | Industrial & Construction Chemical Manufacturer</title>
+        <meta name="description" content="Sharda Chemicals provides high-quality chemical products for various industries." />
+        <meta name="keywords" content="Sharda Chemicals, industrial chemicals, construction chemicals, manufacturing" />
+        <meta property="og:title" content="Sharda Chemicals | Industrial & Construction Chemical Manufacturer" />
+        <meta property="og:description" content="Sharda Chemicals provides high-quality chemical products for various industries." />
+        <meta property="og:image" content="/logo2-bg.png" />
+        <meta property="og:url" content="https://shardachemicals.com" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://shardachemicals.com" />
       </Helmet>
 
       <Navbar activeTab={activeTab} setActiveTab={handleNavbarTabChange} />
